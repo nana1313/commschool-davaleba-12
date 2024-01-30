@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>davaleba 12</title>
-    <script src="app.js"></script>
   </head>
   <body>
     <table>
@@ -34,5 +33,13 @@
         <td>4:4</td>
       </tr>
     </table>
+    <script>
+      let table = document.body.firstElementChild;
+
+      for (let i = 0; i < table.rows.length; i++) {
+        let row = table.rows[i];
+        row.cells[i].style.backgroundColor = "red";
+      }
+    </script>
   </body>
 </html>
